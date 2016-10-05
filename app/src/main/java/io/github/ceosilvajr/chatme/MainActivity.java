@@ -3,39 +3,36 @@ package io.github.ceosilvajr.chatme;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.TextView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
+
+  private Unbinder unbinder;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    initView();
+    unbinder = ButterKnife.bind(this);
   }
 
-  private void initView() {
-    final TextView signUp = (TextView) findViewById(R.id.tvSignUp);
-    signUp.setOnClickListener(this);
+  @OnClick(R.id.btnLogin) void loginUser() {
+    redirectUserToHome();
   }
 
-  @Override public void onClick(final View view) {
-    switch (view.getId()) {
-      case R.id.buttonLogin:
-        loginUser();
-        break;
-      case R.id.tvSignUp:
-        redirectUserToSignUp();
-        break;
-    }
-  }
-
-  private void loginUser() {
-
-  }
-
-  private void redirectUserToSignUp() {
+  @OnClick(R.id.tvSignUp) void redirectUserToSignUp() {
     final Intent intent = new Intent(this, RegisterActivity.class);
     startActivity(intent);
+  }
+
+  private void redirectUserToHome() {
+    final Intent intent = new Intent(this, HomeActivity.class);
+    startActivity(intent);
+  }
+
+  @Override protected void onDestroy() {
+    super.onDestroy();
+    unbinder.unbind();
   }
 }
