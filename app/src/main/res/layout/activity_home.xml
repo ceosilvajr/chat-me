@@ -12,4 +12,27 @@
     tools:context="io.github.ceosilvajr.chatme.HomeActivity"
     >
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="horizontal"
+      >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Enter message"
+        />
+    <View
+        android:layout_width="5dp"
+        android:layout_height="1dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        />
+  </LinearLayout>
+
 </RelativeLayout>

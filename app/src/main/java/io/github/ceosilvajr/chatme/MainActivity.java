@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
     startActivity(intent);
   }
 
+  @OnClick(R.id.tvForgotPassword) void redirectUserToForgotPassword() {
+    final Intent intent = new Intent(this, ForgotPasswordActivity.class);
+    startActivity(intent);
+  }
+
   private void redirectUserToHome() {
     final Intent intent = new Intent(this, HomeActivity.class);
     startActivity(intent);
