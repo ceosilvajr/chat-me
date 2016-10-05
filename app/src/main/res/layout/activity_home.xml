@@ -12,6 +12,77 @@
     tools:context="io.github.ceosilvajr.chatme.HomeActivity"
     >
 
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <ImageView
+        android:id="@+id/sender_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/logo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/sender_photo"
+        android:layout_toRightOf="@+id/sender_photo"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:id="@+id/tv_sender_message"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:layout_marginEnd="30dp"
+          android:layout_marginRight="30dp"
+          android:background="@drawable/bg_message_sender"
+          android:gravity="start"
+          android:padding="5dp"
+          android:text="@string/sample_conversation"
+          android:textColor="@android:color/white"
+          android:textSize="14sp"
+          />
+
+      <TextView
+          android:id="@+id/tv_sender_email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:layout_marginEnd="30dp"
+          android:layout_marginRight="30dp"
+          android:gravity="start"
+          android:padding="5dp"
+          android:text="@string/sample_email"
+          android:textColor="@color/colorSecondaryText"
+          android:textSize="12sp"
+          />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_receiver_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/bg_message_receiver"
+        android:gravity="start"
+        android:padding="5dp"
+        android:text="@string/sample_conversation"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+  </RelativeLayout>
+
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -30,8 +101,11 @@
         />
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="42sp"
+        android:background="@drawable/btn_blue_bg"
+        android:shadowColor="#ff2196f3"
         android:text="SEND"
+        android:textColor="@android:color/white"
         />
   </LinearLayout>
 

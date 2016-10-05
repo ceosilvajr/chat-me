@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Chat Me</string>
+  <string name="sample_conversation">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum turpis a nisl interdum laoreet. Phasellus sed urna ipsum. Aenean finibus turpis a ultricies vestibulum. Aenean nec neque ante. Duis augue ante, hendrerit eu nisl nec, porta ornare turpis. Pellentesque volutpat magna non sem condimentum, tristique facilisis lorem vestibulum.</string>
+  <string name="sample_email">ceosilvajr@gmail.com</string>
 </resources>
