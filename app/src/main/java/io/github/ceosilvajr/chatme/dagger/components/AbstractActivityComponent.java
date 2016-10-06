@@ -1,7 +1,8 @@
-package io.github.ceosilvajr.chatme.dagger;
+package io.github.ceosilvajr.chatme.dagger.components;
 
 import android.app.Activity;
 import dagger.Component;
+import io.github.ceosilvajr.chatme.dagger.modules.ActivityModule;
 import io.github.ceosilvajr.chatme.dagger.annotations.PerActivity;
 
 /**

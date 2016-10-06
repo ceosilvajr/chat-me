@@ -1,9 +1,9 @@
 package io.github.ceosilvajr.chatme;
 
 import android.app.Application;
-import io.github.ceosilvajr.chatme.dagger.AndroidModule;
-import io.github.ceosilvajr.chatme.dagger.ApplicationComponent;
-import io.github.ceosilvajr.chatme.dagger.DaggerApplicationComponent;
+import io.github.ceosilvajr.chatme.dagger.components.DaggerApplicationComponent;
+import io.github.ceosilvajr.chatme.dagger.modules.AndroidModule;
+import io.github.ceosilvajr.chatme.dagger.components.ApplicationComponent;
 
 /**
  * Created by ceosilvajr on 06/10/2016.

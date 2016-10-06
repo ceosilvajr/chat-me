@@ -1,8 +1,9 @@
-package io.github.ceosilvajr.chatme.dagger;
+package io.github.ceosilvajr.chatme.dagger.components;
 
 import android.app.Application;
 import dagger.Component;
 import io.github.ceosilvajr.chatme.ChatMeApplication;
+import io.github.ceosilvajr.chatme.dagger.modules.AndroidModule;
 import javax.inject.Singleton;
 
 /**

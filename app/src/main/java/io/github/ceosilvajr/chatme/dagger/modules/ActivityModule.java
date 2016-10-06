@@ -1,4 +1,4 @@
-package io.github.ceosilvajr.chatme.dagger;
+package io.github.ceosilvajr.chatme.dagger.modules;
 
 import android.app.Activity;
 import dagger.Module;
@@ -12,6 +12,7 @@ import io.github.ceosilvajr.chatme.dagger.annotations.PerActivity;
  */
 
 @Module public class ActivityModule {
+
   private final Activity activity;
 
   public ActivityModule(Activity activity) {
@@ -21,7 +22,7 @@ import io.github.ceosilvajr.chatme.dagger.annotations.PerActivity;
   /**
    * Expose the activity to dependents in the graph.
    */
-  @Provides @PerActivity Activity activity() {
+  @Provides @PerActivity public Activity activity() {
     return activity;
   }
 }

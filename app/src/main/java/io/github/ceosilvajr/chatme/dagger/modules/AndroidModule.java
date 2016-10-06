@@ -1,4 +1,4 @@
-package io.github.ceosilvajr.chatme.dagger;
+package io.github.ceosilvajr.chatme.dagger.modules;
 
 import android.app.Application;
 import dagger.Module;
@@ -22,7 +22,7 @@ import javax.inject.Singleton;
   /**
    * Expose the application to the graph.
    */
-  @Provides @Singleton Application application() {
+  @Provides @Singleton public Application application() {
     return application;
   }
 }
