@@ -1,4 +1,4 @@
-package io.github.ceosilvajr.chatme.dagger;
+package io.github.ceosilvajr.chatme.dagger.annotations;
 
 import java.lang.annotation.Retention;
 import javax.inject.Scope;

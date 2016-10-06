@@ -3,6 +3,7 @@ package io.github.ceosilvajr.chatme.dagger;
 import android.app.Activity;
 import dagger.Module;
 import dagger.Provides;
+import io.github.ceosilvajr.chatme.dagger.annotations.PerActivity;
 
 /**
  * Created by ceosilvajr on 06/10/2016.

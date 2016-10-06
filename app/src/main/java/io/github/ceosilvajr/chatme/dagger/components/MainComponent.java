@@ -3,7 +3,7 @@ package io.github.ceosilvajr.chatme.dagger.components;
 import dagger.Component;
 import io.github.ceosilvajr.chatme.dagger.ActivityModule;
 import io.github.ceosilvajr.chatme.dagger.ApplicationComponent;
-import io.github.ceosilvajr.chatme.dagger.PerActivity;
+import io.github.ceosilvajr.chatme.dagger.annotations.PerActivity;
 import io.github.ceosilvajr.chatme.ui.activities.MainActivity;
 
 /**
