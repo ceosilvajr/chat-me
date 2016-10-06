@@ -1,14 +1,15 @@
-package io.github.ceosilvajr.chatme;
+package io.github.ceosilvajr.chatme.ui.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import io.github.ceosilvajr.chatme.R;
 
-public class ForgotPasswordActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_forgot_password);
+    setContentView(R.layout.activity_register);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
   }
 

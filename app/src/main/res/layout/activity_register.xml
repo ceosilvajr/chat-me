@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.github.ceosilvajr.chatme.RegisterActivity"
+    tools:context="io.github.ceosilvajr.chatme.ui.activities.RegisterActivity"
     >
 
   <LinearLayout
@@ -26,7 +26,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter your email"
+        android:hint="@string/enter_your_email"
         android:inputType="textEmailAddress"
         android:textColor="@color/colorPrimaryText"
         android:textColorHint="@color/colorSecondaryText"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="Enter your password"
+        android:hint="@string/enter_your_password"
         android:inputType="textPassword"
         android:textColor="@color/colorPrimaryText"
         android:textColorHint="@color/colorSecondaryText"
@@ -47,8 +47,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Please enter at least 6 characters"
+        android:layout_gravity="end"
+        android:text="@string/please_enter_at_least_6_characters"
         android:textColor="@color/colorSecondaryText"
         />
 
@@ -58,9 +58,9 @@
         android:layout_height="42dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_blue_bg"
-        android:shadowColor="#ff2196f3"
-        android:text="Register"
-        android:textColor="#FFFFFFFF"
+        android:shadowColor="@color/colorBtnBlueShadow"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
         />
 
   </LinearLayout>

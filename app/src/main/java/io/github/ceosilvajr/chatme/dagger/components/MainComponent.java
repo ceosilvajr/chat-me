@@ -1,0 +1,18 @@
+package io.github.ceosilvajr.chatme.dagger.components;
+
+import dagger.Component;
+import io.github.ceosilvajr.chatme.dagger.ActivityModule;
+import io.github.ceosilvajr.chatme.dagger.ApplicationComponent;
+import io.github.ceosilvajr.chatme.dagger.PerActivity;
+import io.github.ceosilvajr.chatme.ui.activities.MainActivity;
+
+/**
+ * Created by ceosilvajr on 07/10/2016.
+ *
+ * @author ceosilvajr@gmail.com
+ */
+
+@PerActivity @Component(dependencies = ApplicationComponent.class, modules = ActivityModule.class)
+public interface MainComponent {
+  void inject(MainActivity mainActivity);
+}

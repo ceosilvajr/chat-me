@@ -11,7 +11,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.github.ceosilvajr.chatme.MainActivity"
+    tools:context="io.github.ceosilvajr.chatme.ui.activities.MainActivity"
     >
 
   <LinearLayout
@@ -30,25 +30,25 @@
         />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textColor="@color/colorPrimaryText"
         android:textColorHint="@color/colorSecondaryText"
         />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="@color/colorPrimaryText"
         android:textColorHint="@color/colorSecondaryText"
@@ -61,8 +61,8 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_blue_bg"
         android:shadowColor="#ff2196f3"
-        android:text="Login"
-        android:textColor="#FFFFFFFF"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -70,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryText"
         />
@@ -86,7 +86,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Don't have account?"
+        android:text="@string/don_t_have_account"
         android:textColor="@color/colorPrimaryText"
         />
     <TextView
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
         />
