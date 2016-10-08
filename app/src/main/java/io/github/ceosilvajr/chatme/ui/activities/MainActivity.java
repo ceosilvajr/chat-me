@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements OnCompleteListene
   }
 
   private void redirectUserToHome() {
-    final Intent intent = new Intent(this, MainActivity.class);
+    final Intent intent = new Intent(this, HomeActivity.class);
     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
     startActivity(intent);
     finish();
