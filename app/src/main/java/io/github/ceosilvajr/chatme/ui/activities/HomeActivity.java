@@ -76,6 +76,7 @@ public class HomeActivity extends AppCompatActivity implements ChildEventListene
   @Override public void onChildAdded(final DataSnapshot dataSnapshot, final String s) {
     final Message message = getMessage(dataSnapshot);
     displayMessage(message);
+    scrollMyListViewToBottom();
   }
 
   @Override public void onChildChanged(final DataSnapshot dataSnapshot, final String s) {
@@ -142,5 +143,9 @@ public class HomeActivity extends AppCompatActivity implements ChildEventListene
       message.setMe(true);
     }
     return message;
+  }
+
+  private void scrollMyListViewToBottom() {
+    lvMessage.post(() -> lvMessage.setSelection(conversationAdapter.getCount() - 1));
   }
 }
