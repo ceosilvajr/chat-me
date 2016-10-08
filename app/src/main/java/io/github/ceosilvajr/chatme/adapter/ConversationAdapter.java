@@ -46,6 +46,7 @@ public class ConversationAdapter extends ArrayAdapter<Message> {
       textViewReceiverMessage.setText(message.getMessage());
     } else {
       textViewSenderEmail.setVisibility(View.VISIBLE);
+      textViewSenderEmail.setText(message.getEmail());
       textViewReceiverMessage.setVisibility(View.GONE);
       textViewSenderMessage.setVisibility(View.VISIBLE);
       textViewSenderMessage.setText(message.getMessage());
